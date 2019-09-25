@@ -19,9 +19,9 @@ pipeline {
                         continueOnError: false,
                         publishers: [
                             sshPublisherDesc(
-                                configName: 'staging'
+                                configName: 'staging',
                                 sshCredentials: [
-                                    username: "$USERNAME"
+                                    username: "$USERNAME",
                                     encryptedPassphrase: "$USERPASS"
                             ],
                             transfers: [
